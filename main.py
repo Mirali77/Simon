@@ -6,6 +6,10 @@ running = True
 while running:
     # держим цикл на правильной скорости
     clock.tick(FPS)
+
+    # Название окна
+    pygame.display.set_caption('Simon')
+
     if game:
         if tile_table.check():
             tile_table.clear()
